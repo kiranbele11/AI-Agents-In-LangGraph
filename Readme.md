@@ -3,7 +3,7 @@
 Welcome to this collection of Jupyter notebooks designed to explore the capabilities of **LangGraph**, a library for building stateful, multi-actor applications with LLMs. This project provides practical examples demonstrating core LangGraph concepts, from basic agent construction to more complex workflows involving persistence, streaming, and human-in-the-loop interactions.
 
 ![Placeholder: LangGraph Conceptual Diagram](outputs/Flowchart.png)
-![Placeholder: Essay Writer](outputs/Flowchart.png)
+![Placeholder: Essay Writer](outputs/essaywriter.png)
 
 ---
 
