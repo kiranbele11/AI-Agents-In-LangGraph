@@ -35,8 +35,6 @@ This project showcases various aspects of LangGraph, including:
     startLine: 170
     endLine: 173
     ```
-    ![Placeholder: Basic Agent Graph Visualization](images/basic_agent_graph.png)
-
 2.  **`Persistence_&_Streaming.ipynb`**:
     *   Focuses on saving the state of your graph runs using checkpointers (`SqliteSaver`/`AsyncSqliteSaver`).
     *   Shows how to configure threads for persistent runs.
@@ -54,7 +52,6 @@ This project showcases various aspects of LangGraph, including:
     startLine: 319
     endLine: 330
     ```
-
 3.  **`Human_in_the_loop.ipynb`**:
     *   Explores how to incorporate human interaction into your LangGraph agents.
     *   Demonstrates interrupting graph execution to wait for user input.
