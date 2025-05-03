@@ -31,48 +31,22 @@ This project showcases various aspects of LangGraph, including:
     *   Covers defining state, adding nodes, setting entry/end points, and compiling the graph.
     *   Demonstrates a basic agent with a tool.
     *   Includes graph visualization.
-    ```python:LangGraph_Components.ipynb
-    startLine: 170
-    endLine: 173
-    ```
+
 2.  **`Persistence_&_Streaming.ipynb`**:
     *   Focuses on saving the state of your graph runs using checkpointers (`SqliteSaver`/`AsyncSqliteSaver`).
     *   Shows how to configure threads for persistent runs.
     *   Demonstrates streaming intermediate results using `.stream()` / `.astream()`.
     *   Includes an example of streaming individual tokens using `.astream_events()`.
-    ```python:Persistence_&_Streaming.ipynb
-    startLine: 76
-    endLine: 79
-    ```
-    ```python:Persistence_&_Streaming.ipynb
-    startLine: 286
-    endLine: 290
-    ```
-    ```python:Persistence_&_Streaming.ipynb
-    startLine: 319
-    endLine: 330
-    ```
+    
 3.  **`Human_in_the_loop.ipynb`**:
     *   Explores how to incorporate human interaction into your LangGraph agents.
     *   Demonstrates interrupting graph execution to wait for user input.
     *   Shows how to modify the agent's state based on human feedback before resuming.
     *   Covers branching and state modification techniques.
-    ```python:Human_in_the_loop.ipynb
-    startLine: 100
-    endLine: 104
-    ```
+
 4.  **`Essay_Writer.ipynb`**:
     *   Presents a more advanced example: an agent that iteratively plans, drafts, and critiques an essay.
     *   Showcases a multi-step process with conditional looping based on critique and revision limits.
-    ```python:Essay_Writer.ipynb
-    startLine: 52
-    endLine: 60
-    ```
-    ```python:Essay_Writer.ipynb
-    startLine: 444
-    endLine: 451
-    ```
-
 ---
 
 ## 🛠️ Setup & Installation
