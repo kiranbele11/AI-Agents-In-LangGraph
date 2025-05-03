@@ -141,4 +141,3 @@ This project showcases various aspects of LangGraph, including:
 
 ---
 
-Enjoy exploring LangGraph!
