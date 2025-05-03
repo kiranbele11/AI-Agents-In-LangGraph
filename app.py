@@ -10,7 +10,7 @@ if st.button("Generate Essay"):
     with st.spinner("Generating essay..."):
         try:
             res = requests.post(
-                "https://essay-writer-f41700cda15f.herokuapp.com/generate_essay",
+                "https://essay-writer.herokuapp.com/generate_essay",
                 json={"topic": topic}
             )
             if res.status_code == 200:
