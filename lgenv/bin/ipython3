@@ -1,4 +1,4 @@
-#!/Users/kiranbele/Downloads/AI-Agents-In-LangGraph/lgenv/bin/python
+#!/Users/kiranbele/Downloads/AI-Agents-In-LangGraph/lgenv/bin/python3.12
 # -*- coding: utf-8 -*-
 import re
 import sys
