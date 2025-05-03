@@ -1,8 +1,8 @@
 from typing import TypedDict
-from langchain_core.runnables import Runnable
+from langchain_core.runnables import RunnableLambda
 from langgraph.graph import StateGraph
 
-# ✅ Define the expected state structure
+# Define the expected state structure
 class EssayState(TypedDict):
     topic: str
     plan: str
@@ -31,13 +31,13 @@ def research_critique_node(state):
 
 # === Create LangGraph ===
 def create_graph():
-    graph = StateGraph(state_schema=EssayState)  # ✅ Pass state schema
+    graph = StateGraph(state_schema=EssayState)
 
-    graph.add_node("planner", Runnable(planner_node))
-    graph.add_node("research_plan", Runnable(research_plan_node))
-    graph.add_node("generate", Runnable(generate_node))
-    graph.add_node("reflect", Runnable(reflect_node))
-    graph.add_node("research_critique", Runnable(research_critique_node))
+    graph.add_node("planner", RunnableLambda(planner_node))
+    graph.add_node("research_plan", RunnableLambda(research_plan_node))
+    graph.add_node("generate", RunnableLambda(generate_node))
+    graph.add_node("reflect", RunnableLambda(reflect_node))
+    graph.add_node("research_critique", RunnableLambda(research_critique_node))
 
     graph.set_entry_point("planner")
     graph.add_edge("planner", "research_plan")
@@ -46,3 +46,4 @@ def create_graph():
     graph.add_edge("reflect", "research_critique")
 
     return graph.compile()
+
